@@ -2,15 +2,145 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" >
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
-
-    <title>HTML 5</title>
     <link rel="stylesheet" href="style.css" >
+    <link rel="icon" href="assets/svg/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
+    <title>My CV</title>
   </head>
   <body>
-    <script src="index.js"></script>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <ul class="header-nav">
+            <li>
+              <a class="link header-nav-link" href="#About-me">About me</a>
+            </li>
+            <li>
+              <a class="link header-nav-link" href="#contact">Contact</a>
+            </li>
+            <li>
+              <a class="link header-nav-link" href="#skills">Skills</a>
+            </li>
+            <li>
+              <a class="link header-nav-link" href="#code">Butt code</a>
+            </li>
+            <li>
+              <a class="link header-nav-link" href="#education">Education</a>
+            </li>
+            <li>
+              <a class="link header-nav-link" href="#courses">Courses</a>
+            </li>
+            <li>
+              <a class="link header-nav-link" href="#projects">Projects</a>
+            </li>
+            <li>
+              <a class="link header-nav-link" href="#languages">My English</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-content-sections">
+        <div class="my-content">
+          <section class="About-me section" id="About-me">
+            <h2>About me</h2>
+            <p>
+              My name is Oleksandr, I decided to change my profession. At the
+              moment, I am working and studying web development, I have finished
+              several marathons and tried a two-week demo course, but what I met
+              here is just berries in the press.
+            </p>
+          </section>
+
+          <section class="code section" id="code">
+            <h2>Code</h2>
+            <code>
+              const Test = require('@codewars/test-compat');<br>
+
+              describe("Tests", () =&gt; {<br>
+              it("test", () =&gt; {<br>
+              var str = "How can mirrors be real if our eyes aren't real";<br>
+              Test.assertEquals(str.toJadenCase(), "How Can Mirrors Be Real If
+              Our Eyes Aren't Real");<br>
+
+              });<br>
+              });<br>
+            </code>
+          </section>
+          <section class="courses section" id="courses">
+            <h2>Courses</h2>
+            <ul>
+              <li>GoIT: Demo course HTML/CSS</li>
+              <li>RS.School: JS / FRONT-END. STAGE 0</li>
+            </ul>
+          </section>
+          <section class="projects section" id="projects">
+            <h2>Projects</h2>
+            <a href="https://guileless-beijinho-a94566.netlify.app" class="li">
+              <h3>My first projects</h3></a
+            >
+          </section>
+          <section class="education section" id="education">
+            <h2>Education</h2>
+            <h3>University</h3>
+            <h4>Department of Innovation Management</h4>
+          </section>
+        </div>
+        <div class="my-sections">
+          <section class="profile section" id="profile">
+            <img  src="./assets/img/photo.jpg"  width="380" height="500" class="photo" alt="Oleksandr Oleksandrovuch">
+            <h1>Oleksandr Oleksandrovuch</h1>
+            <h5>Junior Developer</h5>
+          </section>
+          <section class="contacts section" id="contact">
+            <h2>Contacts</h2>
+            <ul class="contacts-header link list">
+              <li>
+                <a
+                  class="link link-contacts"
+                  href="olexandr@gmail.com"
+                  lang="en">
+                  Email: olexandr@gmail.com</a
+                >
+              </li>
+              <li>
+                <a class="link link-contacts" href="tel:1258792469"
+                  >Phone: 1258792469</a
+                >
+              </li>
+              <li>
+                <a class="link link-contacts" lang="en">Discord: Aleks_16</a>
+              </li>
+            </ul>
+          </section>
+          <section class="skills section" id="skills">
+            <h2>Skills</h2>
+            <ul class="ul-skills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Windows OS</li>
+              <li>Figma(for web development)</li>
+              <li>VSCode</li>
+            </ul>
+          </section>
+          <section class="languages section" id="languages">
+            <h2>Languages</h2>
+            <ul>
+              <li>Ukrainian</li>
+              <li>English A1</li>
+              <li>Russian</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a class="logo-footer-github link" href="https://github.com/Aleks1216">
+        <img src="./assets/svg/github-mark.svg"  alt="logo github" height="30"></a>
+      <a class="logo-footer link" href="https://rs.school/js/" ><img src="./assets/svg/rs_school_js.svg"  height="30" alt="logo rs_school" ></a>
+    </footer>
   </body>
 </html>
